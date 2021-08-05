@@ -21,40 +21,40 @@
             <div id="main">
                 <label for="form" id="form-label">New boxes, cute stickers and full of love photos</label>
                 <form id="form" action="https://www.freecodecamp.org/email-submit">
-                    <input type="email" id="email" placeholder="Enter your email" required>
+                    <input type="email" id="email" placeholder="Enter your email" required><br>
                     <input type="submit" id="submit" value="Join to newsletter">
                 </form> 
 
-                <div id="video-frame">
-                    <h3>What can I get in box?</h3>
-                    <p>Answer is: many cute things! For example you can finde in your box:
-                        <ul>
-                            <li>Pens</li>
-                            <li>Washi tape</li>
-                            <li>Notebook</li>
-                            <li>Stickers</li>
-                            <li>Stamps &amp; inks</li>
-                            <li>Crayons</li>
-                            <li>Pencilcase</li>
-                            <li>And more!</li>
-                        </ul>
-                    You can check some of our staff on this video!</p>
-                    <iframe id="video" src="https://www.youtube-nocookie.com/embed/hryTseAX1Ok?rel=0&amp;controls=0&amp;showinfo=0" frameborder=0 allowfullscreen></iframe>
-                </div>
+                <h3 id="video-title">What can I get in box?</h3>
+                <p class="video-text">Answer is: many cute things! For example you can finde in your box:</p>
+                <ul>
+                    <li>Pens</li>
+                    <li>Washi tape</li>
+                    <li>Notebook</li>
+                    <li>Stickers</li>
+                    <li>Stamps &amp; inks</li>
+                    <li>Crayons</li>
+                    <li>Pencilcase</li>
+                    <li>And more!</li>
+                </ul>
+                <p class="video-text">You can check some of our staff on this video!</p>
+                <iframe id="video" src="https://www.youtube-nocookie.com/embed/hryTseAX1Ok?rel=0&amp;controls=0&amp;showinfo=0" frameborder=0 allowfullscreen></iframe>
+                
                 <div id="box-options">
                     <form class="one-option">
-                        <h3 class="name-box">One box</h3>
-                        <p class="price">$20</p>
+                        <div class="name-box">One box</div>
+                        <p class="price">$20<br><br></p>
                         <p class="box-discription">
                             One box with cute stationery<br>
                             You can get 4-5 items in box<br>
                             Free worldwide delivery
                         </p>
-                        <input type="submit" value="Buy">
+                        <input type="submit" class="buy" value="Buy">
                     </form>
                     <form class="one-option">
-                        <h3 class="name-box">Three box</h3>
-                        <p class="price"><s>$60</s><br> $55</p>
+                        <div class="name-box">Three box</div>
+                        <p class="price">$55 <br>
+                            <span class="price-old"><s>$120</s></span></p>
                         <p class="box-discription">
                             Three box with cute stationery<br>
                             You will get one box every month<br> 
@@ -62,11 +62,12 @@
                             You will get 1 additional item for all box<br>
                             Free worldwide delivery
                         </p>
-                        <input type="submit" value="Buy">
+                        <input type="submit" class="buy" value="Buy">
                     </form>
                     <form class="one-option">
-                        <h3 class="name-box">Six box</h3>
-                        <p class="price"><s>$120</s><br> $100</p>
+                        <div class="name-box">Six box</div>
+                        <p class="price">$100<br>
+                        <span class="price-old"><s>$120</s></span></p>
                         <p class="box-discription">
                             Six box with cute stationery<br>
                             You will get one box every month<br> 
@@ -74,7 +75,7 @@
                             You will get 2 additional item for all box<br>
                             Free worldwide delivery
                         </p>
-                        <input type="submit" value="Buy">
+                        <input type="submit" class="buy" value="Buy">
                     </form>
                 </div>
             </div>
