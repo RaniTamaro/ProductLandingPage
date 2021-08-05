@@ -50,6 +50,12 @@ html {
     text-align: center;
 }
 
+@media (max-width: 600px){
+    #header {
+        flex-wrap: nowrap;
+    }
+}
+
 #main {
     background-color: rgba(255, 175, 204, 0.9);
     width: 70%;
